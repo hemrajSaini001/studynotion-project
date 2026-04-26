@@ -23,8 +23,10 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"http://localhost:3000",
-		"https://studynotion-project-1-r57e.onrender.com",
+		 origin: [
+      "http://localhost:3000",
+      "https://studynotion-project-1-r57e.onrender.com",
+    ],
 		credentials:true,
 	})
 )
